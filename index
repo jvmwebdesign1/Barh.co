@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BARH – Patented Wearable Hydration Pack | Elev8. Hydr8.</title>
+<meta name="description" content="BARH's patented 2L wearable hydration pack is ergonomic, form-fitting, and weighs under 1 lb. Built for runners, hikers, military, and everyday athletes. Cheers to Hydration!"/>
+<meta name="keywords" content="wearable hydration pack, hands-free water pack, running hydration vest, hydration backpack, BARH water pack, tactical hydration, 2L water pack"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://barh.co/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="BARH – Patented Wearable Hydration Pack"/>
+<meta property="og:description" content="Ergonomic. Form-fitting. Under 1 lb. The revolutionary 2L hydration pack designed for every lifestyle."/>
+<meta property="og:url" content="https://barh.co/"/>
+<meta property="og:image" content="https://barh.co/wp-content/uploads/2025/07/2037592809-80f3d6a8-d_1320.avif"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@barh360x"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"BARH Hydration Pack","description":"Patented 2L wearable hydration pack. Ergonomic, form-fitting, under 1 lb.","brand":{"@type":"Brand","name":"BARH"},"url":"https://barh.co/product/barh/","offers":{"@type":"Offer","url":"https://barh.co/product/barh/","priceCurrency":"USD","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"4"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet"/>
+<style>
+/* ── RESET ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --k:#03080f;--w:#f0f6ff;
+  --blue:#0099e6;--bl:#33bbff;--bd:#005fa3;
+  --orange:#ff6b00;--ol:#ff8c33;
+  --mid:#071525;--mid2:#0a1e33;
+  --glass:rgba(255,255,255,.06);--glb:rgba(0,153,230,.08);
+  --d:'Bebas Neue',sans-serif;--b:'DM Sans',sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:var(--b);background:var(--k);color:var(--w);overflow-x:hidden;cursor:none}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+
+/* ── CURSOR ── */
+#cur,#cur2{position:fixed;border-radius:50%;pointer-events:none;z-index:9999;will-change:transform;top:0;left:0}
+#cur{width:10px;height:10px;background:var(--orange);transition:width .15s,height .15s}
+#cur2{width:36px;height:36px;border:1.5px solid rgba(0,153,230,.5);transition:width .22s,height .22s}
+.hov #cur{width:4px;height:4px}
+.hov #cur2{width:58px;height:58px;border-color:rgba(255,107,0,.5)}
+@media(hover:none){#cur,#cur2{display:none}body{cursor:auto}}
+
+/* ── PROGRESS ── */
+#prog{position:fixed;top:0;left:0;height:2px;width:0%;background:linear-gradient(90deg,var(--blue),var(--orange));z-index:9999;transition:width .08s linear}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1rem 2.8rem;border-bottom:1px solid transparent;transition:background .4s,border-color .4s}
+nav.scrolled{background:rgba(3,8,15,.97);border-color:rgba(0,153,230,.15)}
+.nav-logo{font-family:var(--d);font-size:1.9rem;letter-spacing:.14em;color:var(--bl);position:relative}
+.nav-logo::after{content:'';position:absolute;bottom:-3px;left:0;width:100%;height:2px;background:var(--orange);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.nav-logo:hover::after{transform:scaleX(1)}
+.nav-links{display:flex;gap:1.8rem;list-style:none;align-items:center}
+.nav-links a{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(240,246,255,.5);transition:color .2s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:100%;height:1px;background:var(--bl);transform:scaleX(0);transform-origin:left;transition:transform .25s var(--ease)}
+.nav-links a:hover{color:var(--bl)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-pill{background:var(--orange)!important;color:#fff!important;padding:.45rem 1.2rem!important;border-radius:100px;font-weight:800!important;box-shadow:0 0 16px rgba(255,107,0,.3);transition:background .2s,transform .15s!important}
+.nav-pill:hover{background:var(--ol)!important;transform:scale(1.04)!important}
+.nav-pill::after{display:none!important}
+/* Mobile hamburger */
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.4rem}
+.nav-toggle span{display:block;width:24px;height:2px;background:var(--w);border-radius:2px;transition:transform .3s,opacity .3s}
+.nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ── HERO ── */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.hero-vid{position:absolute;inset:0;z-index:0}
+.hero-vid video{width:100%;height:100%;object-fit:cover;opacity:.5}
+.hero-vig{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(3,8,15,.15) 0%,rgba(3,8,15,0) 30%,rgba(3,8,15,0) 50%,rgba(3,8,15,.98) 100%),linear-gradient(90deg,rgba(0,100,200,.07) 0%,transparent 60%)}
+.hero-content{position:relative;z-index:2;padding:0 2.8rem 4rem;display:flex;flex-direction:column;gap:1.1rem}
+.hero-lockup{display:flex;align-items:flex-end;gap:1.4rem;margin-bottom:.3rem;animation:fadeUp .9s .1s var(--ease) both}
+.hero-word{font-family:var(--d);font-size:clamp(5rem,14vw,13rem);letter-spacing:.03em;line-height:.88;color:transparent;background:linear-gradient(140deg,#fff 30%,var(--bl) 85%);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 0 40px rgba(0,153,230,.5));will-change:opacity;animation:logoPulse 5s 1.2s ease-in-out infinite alternate}
+@keyframes logoPulse{from{opacity:.85}to{opacity:1}}
+.hero-lines{display:flex;flex-direction:column;gap:.2rem;padding-bottom:.8rem}
+.hero-line{font-family:var(--d);font-size:clamp(1.2rem,3vw,2.6rem);letter-spacing:.14em;line-height:1}
+.c1{color:var(--bl)}.c2{color:var(--orange)}
+.hero-sub{font-size:clamp(.84rem,1.4vw,1rem);font-weight:300;line-height:1.78;max-width:430px;color:rgba(240,246,255,.7);animation:fadeUp .9s .3s var(--ease) both}
+.hero-actions{display:flex;gap:.8rem;align-items:center;flex-wrap:wrap;animation:fadeUp .9s .45s var(--ease) both}
+.hero-pills{display:flex;gap:.5rem;flex-wrap:wrap;animation:fadeUp .9s .58s var(--ease) both}
+.hero-pill{display:inline-flex;align-items:center;gap:.4rem;background:rgba(0,153,230,.1);border:1px solid rgba(0,153,230,.22);padding:.38rem .85rem;border-radius:100px;font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--bl)}
+.hp-dot{width:5px;height:5px;border-radius:50%;background:var(--orange);flex-shrink:0}
+.scroll-cue{position:absolute;bottom:2rem;right:2.8rem;z-index:2;display:flex;flex-direction:column;align-items:center;gap:.4rem;animation:fadeUp .9s .8s var(--ease) both}
+.scroll-cue span{font-size:.55rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(240,246,255,.3)}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,rgba(0,153,230,.6),transparent);animation:scLine 2s ease-in-out infinite}
+@keyframes scLine{0%,100%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── BUTTONS ── */
+.btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:var(--orange);color:#fff;font-family:var(--d);font-size:1rem;letter-spacing:.14em;padding:.75rem 1.9rem;border-radius:100px;font-weight:700;box-shadow:0 0 22px rgba(255,107,0,.32),0 4px 14px rgba(0,0,0,.4);transition:background .2s,box-shadow .2s,transform .15s}
+.btn-primary:hover{background:var(--ol);box-shadow:0 0 34px rgba(255,107,0,.48);transform:translateY(-2px) scale(1.03)}
+.btn-blue{display:inline-flex;align-items:center;gap:.5rem;background:var(--blue);color:#fff;font-family:var(--d);font-size:1rem;letter-spacing:.14em;padding:.75rem 1.9rem;border-radius:100px;font-weight:700;box-shadow:0 0 18px rgba(0,153,230,.28);transition:background .2s,transform .15s}
+.btn-blue:hover{background:var(--bl);transform:translateY(-2px) scale(1.03)}
+.btn-ghost{display:inline-flex;align-items:center;gap:.4rem;border:1.5px solid rgba(240,246,255,.2);color:var(--w);font-family:var(--d);font-size:1rem;letter-spacing:.14em;padding:.72rem 1.7rem;border-radius:100px;transition:border-color .2s,color .2s,transform .15s}
+.btn-ghost:hover{border-color:var(--bl);color:var(--bl);transform:translateY(-2px)}
+.btn-dark{display:inline-flex;align-items:center;gap:.6rem;background:var(--orange);color:#fff;font-family:var(--d);font-size:1.1rem;letter-spacing:.14em;padding:.9rem 2.6rem;border-radius:100px;box-shadow:0 8px 28px rgba(255,107,0,.38);transition:background .2s,transform .15s,box-shadow .2s}
+.btn-dark:hover{background:var(--ol);transform:scale(1.04) translateY(-3px);box-shadow:0 16px 48px rgba(255,107,0,.48)}
+
+/* ── TICKER ── */
+.ticker{background:var(--blue);padding:.6rem 0;overflow:hidden;position:relative;z-index:10}
+.ticker-track{display:flex;width:max-content;animation:tick 32s linear infinite;will-change:transform}
+.ticker-track:hover{animation-play-state:paused}
+.t-item{font-family:var(--d);font-size:.9rem;letter-spacing:.2em;color:#fff;white-space:nowrap;padding:0 2rem}
+.t-item::after{content:'✦';margin-left:2rem;opacity:.35}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ── SLIDESHOW (shared) ── */
+.slide-wrap{position:relative;overflow:hidden;cursor:pointer;user-select:none;width:100%;height:100%}
+.slides{display:flex;width:100%;height:100%;transition:transform .52s var(--ease);will-change:transform}
+.slide{flex:0 0 100%;min-width:100%;width:100%;height:100%;overflow:hidden}
+.slide img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;pointer-events:none}
+.slide-dots{position:absolute;bottom:.7rem;left:50%;transform:translateX(-50%);display:flex;gap:.32rem;z-index:5;pointer-events:none}
+.slide-dot{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.35);transition:background .3s,width .3s}
+.slide-dot.on{background:#fff;width:13px;border-radius:3px}
+.slide-hint{position:absolute;inset:0;z-index:4;display:flex;pointer-events:none}
+.slide-hint .sh-l,.slide-hint .sh-r{flex:1;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s;pointer-events:auto}
+.slide-wrap:hover .sh-l,.slide-wrap:hover .sh-r{opacity:1}
+.sh-l{background:linear-gradient(to right,rgba(0,0,0,.28),transparent)}
+.sh-r{background:linear-gradient(to left,rgba(0,0,0,.28),transparent)}
+.sh-arrow{font-size:.95rem;color:rgba(255,255,255,.85)}
+.slide-prog{position:absolute;bottom:0;left:0;height:2px;background:var(--orange);width:0%;z-index:5;transition:none}
+
+/* ── REELS ── */
+.reels{background:var(--k);padding:5rem 0 5rem 2.8rem;overflow:hidden}
+.reels-top{display:flex;align-items:flex-end;justify-content:space-between;padding-right:2.8rem;margin-bottom:2.2rem;flex-wrap:wrap;gap:1rem}
+.reels-top h2{font-family:var(--d);font-size:clamp(2.2rem,5vw,4.5rem);letter-spacing:.03em;line-height:1}
+.reels-top a{font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);display:flex;align-items:center;gap:.4rem;transition:gap .2s}
+.reels-top a:hover{gap:.8rem}
+.reel-strip{display:flex;gap:.8rem;overflow-x:auto;padding-right:2.8rem;padding-bottom:.4rem;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;cursor:grab}
+.reel-strip:active{cursor:grabbing}
+.reel-strip::-webkit-scrollbar{display:none}
+.reel-card{flex:0 0 210px;height:360px;border-radius:16px;position:relative;overflow:hidden;scroll-snap-align:start;background:var(--mid2);transition:transform .32s var(--ease),box-shadow .32s;flex-shrink:0}
+.reel-card:hover{transform:scale(1.04) translateY(-5px);box-shadow:0 22px 52px rgba(0,0,0,.55),0 0 24px rgba(0,153,230,.1)}
+.reel-card .slide-wrap{border-radius:16px}
+.reel-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(3,8,15,.88) 0%,rgba(3,8,15,0) 52%);display:flex;flex-direction:column;justify-content:flex-end;padding:1rem;pointer-events:none;z-index:3}
+.reel-tag{font-size:.58rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);margin-bottom:.28rem}
+.reel-name{font-family:var(--d);font-size:1.1rem;letter-spacing:.05em;color:var(--w);line-height:1.1}
+.reel-cta-card{flex:0 0 200px;height:360px;border-radius:16px;background:var(--glb);border:1px solid rgba(0,153,230,.15);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.2rem;padding:1.8rem;text-align:center;scroll-snap-align:start;flex-shrink:0}
+
+/* ── FEATURES — FIXED: no empty box, clean 5-card layout ── */
+.features{background:var(--mid2);padding:7rem 2.8rem;position:relative;overflow:hidden}
+.features::before{content:'';position:absolute;top:-300px;right:-200px;width:700px;height:700px;background:radial-gradient(circle,rgba(0,153,230,.05) 0%,transparent 65%);pointer-events:none}
+.feat-top{display:flex;align-items:flex-end;gap:3rem;margin-bottom:4rem;flex-wrap:wrap}
+.feat-top h2{font-family:var(--d);font-size:clamp(2.8rem,6vw,6rem);letter-spacing:.03em;line-height:.92;flex:1;min-width:240px}
+.feat-top p{flex:.8;font-size:.9rem;line-height:1.8;color:rgba(240,246,255,.5);font-weight:300;max-width:380px}
+/* Top row: 3 equal cards */
+.feat-row1{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(0,153,230,.08);border:1px solid rgba(0,153,230,.08);border-radius:12px 12px 0 0;overflow:hidden}
+/* Bottom row: 2 cards, 60/40 split */
+.feat-row2{display:grid;grid-template-columns:1.1fr .9fr;gap:1px;background:rgba(0,153,230,.08);border:1px solid rgba(0,153,230,.08);border-top:none;border-radius:0 0 12px 12px;overflow:hidden;margin-top:0}
+.fc{background:var(--mid2);padding:2.2rem 1.8rem;position:relative;overflow:hidden;transition:background .3s}
+.fc::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,153,230,.05),transparent);opacity:0;transition:opacity .3s}
+.fc:hover{background:#0c2340}
+.fc:hover::before{opacity:1}
+.fc-num{font-family:var(--d);font-size:4.5rem;line-height:1;color:rgba(0,153,230,.09);margin-bottom:.45rem;transition:color .3s}
+.fc:hover .fc-num{color:rgba(0,153,230,.2)}
+.fc-title{font-family:var(--d);font-size:1.5rem;letter-spacing:.06em;margin-bottom:.5rem;transition:color .3s}
+.fc:hover .fc-title{color:var(--bl)}
+.fc-body{font-size:.82rem;line-height:1.7;color:rgba(240,246,255,.48);font-weight:300}
+.fc-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,107,0,.1);border:1px solid rgba(255,107,0,.25);padding:.35rem .8rem;border-radius:100px;font-size:.6rem;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:var(--orange);margin-top:.9rem}
+.fc-badges{display:flex;gap:.45rem;flex-wrap:wrap;margin-top:1rem}
+
+/* ── WHO ── */
+.who{background:var(--k);padding:7rem 2.8rem}
+.who-inner{display:grid;grid-template-columns:1fr 1fr;gap:4.5rem;align-items:center}
+.who-text h2{font-family:var(--d);font-size:clamp(2.5rem,5.5vw,5rem);letter-spacing:.03em;line-height:.95;margin-bottom:1.8rem}
+.who-text h2 em{color:var(--bl);font-style:normal;display:block}
+.who-cards{display:flex;flex-direction:column;gap:.8rem}
+.who-card{display:flex;align-items:center;gap:1.2rem;padding:1.2rem 1.4rem;background:var(--glass);border:1px solid rgba(0,153,230,.08);border-radius:12px;transition:border-color .3s,background .3s,transform .3s;position:relative;overflow:hidden;cursor:default}
+.who-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--orange);transform:scaleY(0);transform-origin:bottom;transition:transform .3s var(--ease)}
+.who-card:hover{border-color:rgba(255,107,0,.22);background:rgba(255,107,0,.04);transform:translateX(6px)}
+.who-card:hover::before{transform:scaleY(1)}
+.who-icon{font-size:1.7rem;flex-shrink:0;width:46px;height:46px;display:flex;align-items:center;justify-content:center;background:rgba(0,153,230,.08);border-radius:10px;transition:background .3s,transform .3s}
+.who-card:hover .who-icon{background:rgba(255,107,0,.12);transform:scale(1.1) rotate(-5deg)}
+.who-ct h3{font-family:var(--d);font-size:1.2rem;letter-spacing:.06em;margin-bottom:.18rem}
+.who-ct p{font-size:.78rem;line-height:1.6;color:rgba(240,246,255,.48);font-weight:300}
+/* Story stack */
+.story-stack{position:relative;height:480px;display:flex;align-items:center;justify-content:center}
+.ss-deco{position:absolute;width:185px;height:340px;border-radius:16px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.5);transition:transform .6s var(--ease);z-index:1}
+.ss-deco img{width:100%;height:100%;object-fit:cover}
+.ss-deco::after{content:'';position:absolute;inset:0;background:rgba(3,8,15,.35)}
+.ss-left{transform:rotate(-8deg) translateX(-110px)}
+.ss-right{transform:rotate(8deg) translateX(110px)}
+.story-stack:hover .ss-left{transform:rotate(-12deg) translateX(-130px) translateY(-8px)}
+.story-stack:hover .ss-right{transform:rotate(12deg) translateX(130px) translateY(-8px)}
+.ss-main{position:relative;width:220px;height:400px;border-radius:18px;overflow:hidden;z-index:3;box-shadow:0 28px 65px rgba(0,153,230,.15),0 22px 55px rgba(0,0,0,.55)}
+.ss-main .slide-wrap{width:100%;height:100%}
+.ss2-lbl{position:absolute;bottom:1rem;left:1rem;right:1rem;z-index:10;pointer-events:none}
+.ss2-lbl .stag{font-size:.58rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);margin-bottom:.22rem}
+.ss2-lbl .sname{font-family:var(--d);font-size:1.25rem;letter-spacing:.06em}
+
+/* ── WATER BREAK ── */
+.water-break{position:relative;height:68vh;min-height:440px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.water-break video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.45}
+.wb-ov{position:absolute;inset:0;background:linear-gradient(to right,rgba(3,8,15,.65) 0%,rgba(3,8,15,.1) 50%,rgba(3,8,15,.65) 100%),linear-gradient(to bottom,rgba(3,8,15,.35) 0%,rgba(3,8,15,.05) 50%,rgba(3,8,15,.35) 100%)}
+.wb-content{position:relative;z-index:2;text-align:center;display:flex;flex-direction:column;align-items:center;gap:.9rem}
+.water-logo{font-family:var(--d);font-size:clamp(6rem,18vw,16rem);letter-spacing:.06em;color:transparent;background:linear-gradient(140deg,rgba(255,255,255,.92) 0%,rgba(0,153,230,.85) 55%,rgba(0,100,190,.65) 100%);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 0 50px rgba(0,153,230,.55));animation:wlPulse 5s ease-in-out infinite alternate;line-height:.9}
+@keyframes wlPulse{from{opacity:.82}to{opacity:1}}
+.water-sub{font-family:var(--d);font-size:clamp(.9rem,2.5vw,1.7rem);letter-spacing:.4em;text-transform:uppercase;color:rgba(240,246,255,.55);margin-top:.2rem}
+
+/* ── GALLERY ── */
+.gallery-sec{background:var(--mid);padding:6rem 2.8rem}
+.gallery-sec h2{font-family:var(--d);font-size:clamp(2.4rem,5.5vw,4.8rem);letter-spacing:.03em;line-height:1;margin-bottom:.5rem}
+.gallery-sec .sub{font-size:.68rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--orange);margin-bottom:2rem;display:block}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:.7rem;margin-top:2rem}
+.gal-cell{border-radius:10px;overflow:hidden;position:relative;cursor:pointer;background:var(--mid2)}
+.gal-cell.tall{grid-row:span 2}  /* 2 × 220px + gap = ~447px */
+.gal-cell.wide{grid-column:span 2}
+/* slide-wrap and slides are full size of cell */
+.gal-cell .slide-wrap,.gal-cell .slides,.gal-cell .slide{width:100%;height:100%}
+/* Images COVER the cell — full image visible via object-position center */
+.gal-cell .slide img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.gal-cell-ov{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(3,8,15,.75) 0%,rgba(3,8,15,0) 60%);z-index:3;pointer-events:none;padding:.9rem}
+.gal-cell-label{font-family:var(--d);font-size:.95rem;letter-spacing:.06em;color:var(--w);opacity:0;transform:translateY(8px);transition:opacity .3s,transform .3s}
+.gal-cell:hover .gal-cell-label{opacity:1;transform:translateY(0)}
+
+/* ── SPACE SECTION ── */
+.space-sec{background:var(--k);padding:7rem 2.8rem;position:relative;overflow:hidden}
+.space-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 70% 50%,rgba(0,80,180,.08) 0%,transparent 70%);pointer-events:none}
+.space-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.space-text .label{font-size:.68rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--bl);display:flex;align-items:center;gap:.6rem;margin-bottom:.9rem}
+.space-text .label::before{content:'';width:26px;height:1px;background:var(--bl)}
+.space-text h2{font-family:var(--d);font-size:clamp(2.5rem,5.5vw,5rem);letter-spacing:.03em;line-height:.95;margin-bottom:1.5rem}
+.space-text h2 em{color:var(--bl);font-style:normal;display:block}
+.space-text p{font-size:.9rem;line-height:1.8;color:rgba(240,246,255,.58);font-weight:300;margin-bottom:1rem}
+.space-bullets{list-style:none;display:flex;flex-direction:column;gap:.6rem;margin:1.2rem 0}
+.space-bullets li{font-size:.88rem;font-weight:600;color:rgba(240,246,255,.75);display:flex;align-items:center;gap:.7rem}
+.space-bullets li::before{content:'✦';color:var(--orange);font-size:.6rem;flex-shrink:0}
+.space-imgs{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+.space-img-card{border-radius:10px;overflow:hidden;background:var(--mid2)}
+.space-img-card.tall{grid-column:span 2}
+.space-img-card img{width:100%;height:auto;display:block}
+.space-img-card.fixed-h{height:220px}
+.space-img-card.fixed-h img{width:100%;height:100%;object-fit:contain;background:var(--mid2)}
+.nasa-badges{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.5rem}
+.nasa-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(0,153,230,.1);border:1px solid rgba(0,153,230,.2);padding:.45rem 1rem;border-radius:100px;font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--bl)}
+
+/* ── GOV / MILITARY SECTION ── */
+.gov-sec{background:var(--mid2);padding:7rem 2.8rem;position:relative;overflow:hidden}
+.gov-sec::before{content:'';position:absolute;top:-200px;left:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(255,107,0,.04) 0%,transparent 65%);pointer-events:none}
+.gov-header{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;margin-bottom:4rem}
+.gov-text .label{font-size:.68rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--orange);display:flex;align-items:center;gap:.6rem;margin-bottom:.9rem}
+.gov-text .label::before{content:'';width:26px;height:1px;background:var(--orange)}
+.gov-text h2{font-family:var(--d);font-size:clamp(2.5rem,5.5vw,5rem);letter-spacing:.03em;line-height:.95;margin-bottom:1.5rem}
+.gov-text h2 em{color:var(--orange);font-style:normal;display:block}
+.gov-text p{font-size:.9rem;line-height:1.8;color:rgba(240,246,255,.58);font-weight:300;margin-bottom:1rem}
+.gov-advantages{display:flex;flex-direction:column;gap:.8rem}
+.gov-adv{display:flex;align-items:flex-start;gap:.8rem;padding:1rem 1.2rem;background:var(--glass);border:1px solid rgba(255,107,0,.08);border-radius:10px;transition:border-color .3s,background .3s}
+.gov-adv:hover{border-color:rgba(255,107,0,.2);background:rgba(255,107,0,.04)}
+.gov-adv-icon{font-size:1.2rem;flex-shrink:0;margin-top:.1rem}
+.gov-adv h4{font-family:var(--d);font-size:1rem;letter-spacing:.06em;margin-bottom:.2rem;color:var(--w)}
+.gov-adv p{font-size:.78rem;line-height:1.55;color:rgba(240,246,255,.48);font-weight:300;margin:0}
+/* Gallery row */
+.gov-img-row{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin-bottom:3rem}
+.gov-img-card{border-radius:10px;overflow:hidden;background:var(--mid);height:220px}
+.gov-img-card img{width:100%;height:100%;object-fit:cover}
+/* Stats */
+.gov-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,107,0,.1);border:1px solid rgba(255,107,0,.1);border-radius:10px;overflow:hidden}
+.gov-stat{background:var(--mid2);padding:2rem 1.5rem;text-align:center;transition:background .3s}
+.gov-stat:hover{background:#120e05}
+.gov-stat-num{font-family:var(--d);font-size:3rem;color:var(--orange);line-height:1;margin-bottom:.4rem}
+.gov-stat-label{font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(240,246,255,.45)}
+/* Comparison image */
+.comparison-wrap{margin-top:3rem;border-radius:10px;overflow:hidden}
+.comparison-wrap img{width:100%;height:auto;display:block}
+
+/* ── BARH 360 SECTION ── */
+.b360-sec{background:var(--k);padding:7rem 2.8rem;position:relative;overflow:hidden}
+.b360-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.b360-text .label{font-size:.68rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--bl);display:flex;align-items:center;gap:.6rem;margin-bottom:.9rem}
+.b360-text .label::before{content:'';width:26px;height:1px;background:var(--bl)}
+.b360-text h2{font-family:var(--d);font-size:clamp(2.5rem,5.5vw,5rem);letter-spacing:.03em;line-height:.95;margin-bottom:1.5rem}
+.b360-text h2 em{color:var(--bl);font-style:normal;display:block}
+.b360-text p{font-size:.9rem;line-height:1.8;color:rgba(240,246,255,.58);font-weight:300;margin-bottom:1rem}
+.b360-sub-heading{font-family:var(--d);font-size:1.4rem;letter-spacing:.06em;color:var(--w);margin:1.5rem 0 .7rem}
+.b360-imgs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.6rem}
+.b360-img{border-radius:8px;overflow:hidden;height:160px;background:var(--mid2)}
+.b360-img img{width:100%;height:100%;object-fit:cover}
+.b360-img.tall{height:220px}
+
+/* ── VIDEO EMBEDS (autoplay testimonial) ── */
+.vid-sec{background:var(--mid2);padding:5rem 2.8rem}
+.vid-sec h2{font-family:var(--d);font-size:clamp(2rem,5vw,4rem);letter-spacing:.03em;line-height:1;margin-bottom:.4rem}
+.vid-sec .sub{font-size:.68rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--orange);margin-bottom:2rem;display:block}
+.vid-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;margin-top:2rem}
+.vid-card{border-radius:12px;overflow:hidden;background:var(--k);position:relative}
+.vid-card video{width:100%;display:block;border-radius:12px}
+.vid-card-label{padding:.7rem 1rem;font-family:var(--d);font-size:1.1rem;letter-spacing:.06em;color:rgba(240,246,255,.7);background:var(--mid2)}
+.vid-full{grid-column:span 2}
+.vid-full video{width:100%;max-height:500px;object-fit:cover}
+.reviews{background:var(--mid2);padding:7rem 2.8rem;position:relative;overflow:hidden}
+.reviews::after{content:'★★★★★';position:absolute;right:-2rem;top:3rem;font-size:16vw;color:rgba(255,107,0,.025);font-family:var(--d);letter-spacing:.1em;pointer-events:none;white-space:nowrap}
+.rev-hd{margin-bottom:3rem}
+.rev-hd .lbl{font-size:.65rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--bl);margin-bottom:.6rem}
+.rev-hd h2{font-family:var(--d);font-size:clamp(2.5rem,6vw,5.5rem);letter-spacing:.03em;line-height:.95}
+.rev-hd .s-big{font-size:1.6rem;color:var(--orange);letter-spacing:.15em;margin-top:.5rem;display:block}
+.rev-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.rev-card{padding:1.9rem;background:var(--glass);border:1px solid rgba(255,255,255,.07);border-radius:14px;position:relative;overflow:hidden;transition:border-color .3s,transform .3s}
+.rev-card:hover{border-color:rgba(255,107,0,.18);transform:translateY(-4px)}
+.rev-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--orange),transparent);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.rev-card:hover::before{transform:scaleX(1)}
+.rev-stars{color:var(--orange);font-size:.85rem;letter-spacing:.1em;margin-bottom:.7rem}
+.rev-qm{font-family:var(--d);font-size:3rem;color:rgba(255,107,0,.2);line-height:.8;margin-bottom:.4rem;display:block}
+.rev-txt{font-size:.9rem;line-height:1.75;color:rgba(240,246,255,.75);font-style:italic;font-weight:300;margin-bottom:1rem}
+.rev-auth{font-size:.65rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--bl)}
+
+/* ── ORANGE MARQUEE ── */
+.om{background:var(--orange);padding:.55rem 0;overflow:hidden}
+.om-track{display:flex;width:max-content;animation:tick 22s linear infinite reverse;will-change:transform}
+.om-item{font-family:var(--d);font-size:.86rem;letter-spacing:.2em;color:#fff;white-space:nowrap;padding:0 2rem;opacity:.92}
+.om-item::after{content:'✦';margin-left:2rem;opacity:.38}
+
+/* ── ABOUT ── */
+.about{background:var(--k);padding:7rem 2.8rem;display:grid;grid-template-columns:1fr 1fr;gap:5.5rem;align-items:center}
+.abt-lbl{font-size:.65rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--bl);display:flex;align-items:center;gap:.6rem;margin-bottom:.85rem}
+.abt-lbl::before{content:'';width:24px;height:1px;background:var(--bl)}
+.about h2{font-family:var(--d);font-size:clamp(2.5rem,5.5vw,4.8rem);letter-spacing:.03em;line-height:.95;margin-bottom:1.5rem}
+.about h2 em{display:block;color:var(--bl);font-style:normal}
+.about p{font-size:.88rem;line-height:1.8;color:rgba(240,246,255,.57);font-weight:300;margin-bottom:.9rem}
+.abt-ctas{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.8rem}
+.spec-table{display:flex;flex-direction:column}
+.spec-row{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.2rem;border-bottom:1px solid rgba(0,153,230,.07);transition:background .2s}
+.spec-row:first-child{border-top:1px solid rgba(0,153,230,.07)}
+.spec-row:hover{background:rgba(0,153,230,.04)}
+.sk{font-size:.64rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(240,246,255,.34)}
+.sv{font-family:var(--d);font-size:1.05rem;letter-spacing:.05em}
+.sv .hi{color:var(--bl)}
+
+/* ── BIG CTA ── */
+.big-cta{position:relative;overflow:hidden;background:var(--blue);padding:7rem 2.8rem;text-align:center}
+.big-cta::before{content:'BARH';position:absolute;font-family:var(--d);font-size:min(28vw,300px);letter-spacing:.04em;color:rgba(0,0,0,.07);top:50%;left:50%;transform:translate(-50%,-50%);white-space:nowrap;pointer-events:none;animation:bgDrift 12s ease-in-out infinite alternate}
+@keyframes bgDrift{from{transform:translate(-50%,-50%) scale(1)}to{transform:translate(-50%,-50%) scale(1.05)}}
+.bc-inner{position:relative;z-index:1}
+.big-cta h2{font-family:var(--d);font-size:clamp(3rem,9vw,8rem);letter-spacing:.04em;color:#fff;line-height:.95;margin-bottom:.65rem}
+.big-cta p{font-size:1rem;color:rgba(255,255,255,.62);font-weight:300;margin-bottom:2.1rem}
+
+/* ── SOCIAL ── */
+.social-sec{background:var(--k);padding:4.5rem 2.8rem;border-top:1px solid rgba(0,153,230,.07);display:flex;flex-direction:column;align-items:center;gap:1.6rem}
+.social-sec p{font-size:.65rem;font-weight:700;letter-spacing:.35em;text-transform:uppercase;color:rgba(240,246,255,.3)}
+.social-icons{display:flex;gap:1.1rem}
+.si{display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:12px;background:var(--glass);border:1px solid rgba(0,153,230,.12);color:rgba(240,246,255,.55);transition:background .25s,border-color .25s,color .25s,transform .2s}
+.si:hover{background:rgba(0,153,230,.12);border-color:rgba(0,153,230,.28);color:var(--bl);transform:translateY(-4px) scale(1.08)}
+
+/* ── FOOTER ── */
+footer{background:var(--mid2);padding:2.2rem 2.8rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.2rem;border-top:1px solid rgba(0,153,230,.07)}
+.fl{font-family:var(--d);font-size:1.5rem;letter-spacing:.14em;color:var(--bl)}
+.flinks{display:flex;gap:1.6rem;flex-wrap:wrap}
+.flinks a{font-size:.64rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(240,246,255,.3);transition:color .2s}
+.flinks a:hover{color:var(--orange)}
+.fcopy{font-size:.64rem;color:rgba(240,246,255,.2);letter-spacing:.08em}
+
+/* ── LIGHTBOX ── */
+#lb{position:fixed;inset:0;z-index:10000;background:rgba(3,8,15,.96);display:none;align-items:center;justify-content:center;padding:1.5rem}
+#lb.open{display:flex}
+#lb-img{max-width:90vw;max-height:88vh;object-fit:contain;border-radius:8px;box-shadow:0 40px 100px rgba(0,0,0,.7)}
+#lb-close{position:absolute;top:1.2rem;right:1.2rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.8);font-size:1.4rem;width:42px;height:42px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s;line-height:1}
+#lb-close:hover{background:rgba(255,255,255,.2)}
+#lb-prev,#lb-next{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);color:#fff;font-size:1.3rem;width:46px;height:46px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
+#lb-prev{left:1.2rem}#lb-next{right:1.2rem}
+#lb-prev:hover,#lb-next:hover{background:rgba(255,255,255,.2)}
+#lb-counter{position:absolute;bottom:1.2rem;left:50%;transform:translateX(-50%);font-size:.68rem;letter-spacing:.2em;color:rgba(255,255,255,.45)}
+
+/* ── REVEAL ── */
+.r{opacity:0;transform:translateY(24px);transition:opacity .68s var(--ease),transform .68s var(--ease)}
+.rl{opacity:0;transform:translateX(-24px);transition:opacity .68s var(--ease),transform .68s var(--ease)}
+.rr{opacity:0;transform:translateX(24px);transition:opacity .68s var(--ease),transform .68s var(--ease)}
+.rs{opacity:0;transform:scale(.95);transition:opacity .68s var(--ease),transform .68s var(--ease)}
+.r.in,.rl.in,.rr.in,.rs.in{opacity:1;transform:none}
+.d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}.d4{transition-delay:.28s}.d5{transition-delay:.35s}
+
+/* ══════════════════════════
+   MOBILE — 768px
+══════════════════════════ */
+@media(max-width:768px){
+  /* Nav */
+  nav{padding:.9rem 1.4rem}
+  .nav-links{
+    display:none;flex-direction:column;gap:0;position:fixed;top:0;left:0;right:0;bottom:0;
+    background:rgba(3,8,15,.98);justify-content:center;align-items:center;z-index:190;
+    padding:5rem 2rem 2rem;
+  }
+  .nav-links.open{display:flex}
+  .nav-links li{width:100%;text-align:center;border-bottom:1px solid rgba(0,153,230,.1)}
+  .nav-links a{display:block;padding:1.1rem;font-size:.85rem;color:rgba(240,246,255,.7)}
+  .nav-pill{margin-top:1rem;background:var(--orange)!important;border:none;display:block;width:100%;text-align:center;padding:.8rem!important}
+  .nav-toggle{display:flex;position:relative;z-index:201}
+
+  /* Hero */
+  .hero-content{padding:0 1.4rem 3.5rem}
+  .hero-word{font-size:clamp(4.5rem,18vw,7rem)}
+  .hero-lockup{gap:1rem}
+  .hero-sub{max-width:100%}
+  .scroll-cue{right:1.4rem}
+
+  /* Sections padding */
+  .reels,.features,.who,.reviews,.gallery-sec,.about,.social-sec,.space-sec,.gov-sec,.b360-sec,.vid-sec{padding-left:1.4rem;padding-right:1.4rem}
+  .reels{padding-left:1.4rem}
+  .reels-top{padding-right:1.4rem}
+  .reel-strip{padding-right:1.4rem}
+
+  /* Reel cards */
+  .reel-card{flex:0 0 180px;height:310px}
+
+  /* Features */
+  .feat-top{gap:1.5rem}
+  .feat-row1{grid-template-columns:1fr;border-radius:12px 12px 0 0}
+  .feat-row2{grid-template-columns:1fr;border-radius:0 0 12px 12px}
+
+  /* Who */
+  .who-inner{grid-template-columns:1fr;gap:2.5rem}
+  .story-stack{display:none}
+
+  /* Gallery */
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:180px}
+  .gal-cell.tall,.gal-cell.wide{grid-column:span 1;grid-row:span 1}
+  /* Video grid */
+  .vid-grid{grid-template-columns:1fr}
+  .vid-full{grid-column:span 1}
+
+  /* Space */
+  .space-inner{grid-template-columns:1fr;gap:2.5rem}
+  .space-imgs{grid-template-columns:1fr 1fr}
+  .space-img-card.tall{grid-column:span 2}
+
+  /* Gov */
+  .gov-header{grid-template-columns:1fr;gap:2.5rem}
+  .gov-img-row{grid-template-columns:1fr 1fr}
+  .gov-stats{grid-template-columns:1fr 1fr}
+  .gov-stats .gov-stat:last-child{grid-column:span 2}
+
+  /* B360 */
+  .b360-inner{grid-template-columns:1fr;gap:2.5rem}
+  .b360-imgs{grid-template-columns:1fr 1fr}
+
+  /* About */
+  .about{grid-template-columns:1fr;gap:3rem}
+
+  /* Reviews */
+  .rev-grid{grid-template-columns:1fr}
+
+  /* Footer */
+  footer{flex-direction:column;text-align:center}
+  .flinks{justify-content:center}
+
+  /* Lightbox prev/next */
+  #lb-prev{left:.5rem}#lb-next{right:.5rem}
+  #lb-img{max-width:96vw;max-height:80vh}
+
+  /* Water break */
+  .water-logo{font-size:clamp(4.5rem,22vw,9rem)}
+}
+
+@media(max-width:480px){
+  .hero-word{font-size:clamp(4rem,20vw,6rem)}
+  .hero-lines{display:none}
+  .gallery-grid{grid-template-columns:1fr;grid-auto-rows:220px}
+  .gov-stats{grid-template-columns:1fr;gap:1px}
+  .gov-stats .gov-stat:last-child{grid-column:span 1}
+  .b360-imgs{grid-template-columns:1fr}
+  .space-imgs{grid-template-columns:1fr}
+  .space-img-card.tall{grid-column:span 1}
+  .gov-img-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div id="prog"></div>
+<div id="cur"></div>
+<div id="cur2"></div>
+
+<!-- LIGHTBOX -->
+<div id="lb" role="dialog" aria-modal="true">
+  <button id="lb-close" aria-label="Close">✕</button>
+  <button id="lb-prev" aria-label="Previous">‹</button>
+  <img id="lb-img" src="" alt="BARH photo"/>
+  <button id="lb-next" aria-label="Next">›</button>
+  <div id="lb-counter"></div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo">BARH</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#reels" class="nl">Lifestyle</a></li>
+    <li><a href="#features" class="nl">Features</a></li>
+    <li><a href="#space" class="nl">Space</a></li>
+    <li><a href="#military" class="nl">Military</a></li>
+    <li><a href="#gallery" class="nl">Gallery</a></li>
+    <li><a href="#reviews" class="nl">Reviews</a></li>
+    <li><a href="#testimonials" class="nl">Videos</a></li>
+    <li><a href="#about" class="nl">About</a></li>
+    <li><a href="https://barh.co/product/barh/" class="nav-pill">Order Now</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-vid">
+    <video autoplay muted loop playsinline preload="auto"
+      poster="https://barh.co/wp-content/uploads/2025/07/2037592809-80f3d6a8-d_1320.avif">
+      <source src="https://barh.co/wp-content/uploads/2025/07/EsDu5uC-1-2.mp4" type="video/mp4"/>
+    </video>
+  </div>
+  <div class="hero-vig"></div>
+  <div class="hero-content">
+    <div class="hero-lockup">
+      <div class="hero-word">BARH</div>
+      <div class="hero-lines">
+        <span class="hero-line c1">ELEV8.</span>
+        <span class="hero-line c2">HYDR8.</span>
+      </div>
+    </div>
+    <p class="hero-sub">The patented 2L wearable hydration pack. Ergonomic. Form-fitting. Under 1 lb. Built for every body — from marathon to military.</p>
+    <div class="hero-actions">
+      <a href="https://barh.co/product/barh/" class="btn-primary">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        Order Your BARH
+      </a>
+      <a href="#features" class="btn-ghost">See The Tech →</a>
+    </div>
+    <div class="hero-pills">
+      <div class="hero-pill"><span class="hp-dot"></span>2L Capacity</div>
+      <div class="hero-pill"><span class="hp-dot"></span>Under 1 lb</div>
+      <div class="hero-pill"><span class="hp-dot"></span>Patented Design</div>
+      <div class="hero-pill"><span class="hp-dot"></span>Military-Tested</div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <div class="t-item">CHEERS TO HYDRATION</div><div class="t-item">HANDS-FREE WATER</div><div class="t-item">PATENTED DESIGN</div><div class="t-item">UNDER 1 LB</div><div class="t-item">2L CAPACITY</div><div class="t-item">MILITARY READY</div><div class="t-item">ELEV8 HYDR8</div>
+    <div class="t-item">CHEERS TO HYDRATION</div><div class="t-item">HANDS-FREE WATER</div><div class="t-item">PATENTED DESIGN</div><div class="t-item">UNDER 1 LB</div><div class="t-item">2L CAPACITY</div><div class="t-item">MILITARY READY</div><div class="t-item">ELEV8 HYDR8</div>
+  </div>
+</div>
+
+<!-- REELS -->
+<section class="reels" id="reels">
+  <div class="reels-top">
+    <h2 class="r"><span style="color:var(--bl)">BARH</span> Life<br>in the Wild.</h2>
+    <a href="https://www.instagram.com/barh360/" class="r d2" target="_blank" rel="noopener">Follow @barh360 →</a>
+  </div>
+  <div class="reel-strip" id="reelStrip">
+    <div class="reel-card r d1">
+      <div class="slide-wrap" data-autoplay="4000">
+        <div class="slides"><div class="slide"><img src="https://barh.co/wp-content/uploads/2025/07/rsw_984h_656-3.webp" alt="BARH trail"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2025/07/IMG_8633.jpeg" alt="BARH lifestyle"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2026/01/1-1.png" alt="BARH pack"/></div></div>
+        <div class="slide-hint"><div class="sh-l"><span class="sh-arrow">‹</span></div><div class="sh-r"><span class="sh-arrow">›</span></div></div>
+        <div class="slide-dots"></div><div class="slide-prog"></div>
+      </div>
+      <div class="reel-ov"><div class="reel-tag">Trail Ready</div><div class="reel-name">Born for the Outdoors</div></div>
+    </div>
+    <div class="reel-card r d2">
+      <div class="slide-wrap" data-autoplay="4500">
+        <div class="slides"><div class="slide"><img src="https://barh.co/wp-content/uploads/2025/07/IMG_8725.jpg" alt="BARH active"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2026/01/3-1.png" alt="BARH 3"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2025/07/rsw_984h_656-3.webp" alt="BARH outdoor"/></div></div>
+        <div class="slide-hint"><div class="sh-l"><span class="sh-arrow">‹</span></div><div class="sh-r"><span class="sh-arrow">›</span></div></div>
+        <div class="slide-dots"></div><div class="slide-prog"></div>
+      </div>
+      <div class="reel-ov"><div class="reel-tag">Always Moving</div><div class="reel-name">Keep The Pace</div></div>
+    </div>
+    <div class="reel-card r d3">
+      <div class="slide-wrap" data-autoplay="3800">
+        <div class="slides"><div class="slide"><img src="https://barh.co/wp-content/uploads/2025/07/IMG_7222.jpg" alt="BARH community"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2026/01/4-1.png" alt="BARH 4"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2025/07/IMG_8725.jpg" alt="BARH active"/></div></div>
+        <div class="slide-hint"><div class="sh-l"><span class="sh-arrow">‹</span></div><div class="sh-r"><span class="sh-arrow">›</span></div></div>
+        <div class="slide-dots"></div><div class="slide-prog"></div>
+      </div>
+      <div class="reel-ov"><div class="reel-tag">Community</div><div class="reel-name">Join The Movement</div></div>
+    </div>
+    <div class="reel-card r d4">
+      <div class="slide-wrap" data-autoplay="5000">
+        <div class="slides"><div class="slide"><img src="https://barh.co/wp-content/uploads/2025/07/rsw_1280h_1280.webp" alt="BARH outdoor"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2026/01/2-1.png" alt="BARH 2"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2025/07/IMG_7222.jpg" alt="BARH field"/></div></div>
+        <div class="slide-hint"><div class="sh-l"><span class="sh-arrow">‹</span></div><div class="sh-r"><span class="sh-arrow">›</span></div></div>
+        <div class="slide-dots"></div><div class="slide-prog"></div>
+      </div>
+      <div class="reel-ov"><div class="reel-tag">BARH 360°</div><div class="reel-name">Global Influence</div></div>
+    </div>
+    <div class="reel-card r d5">
+      <div class="slide-wrap" data-autoplay="4200">
+        <div class="slides"><div class="slide"><img src="https://barh.co/wp-content/uploads/2026/01/9-1.png" alt="BARH 9"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2026/01/8-1.png" alt="BARH 8"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2026/01/10-1.png" alt="BARH 10"/></div></div>
+        <div class="slide-hint"><div class="sh-l"><span class="sh-arrow">‹</span></div><div class="sh-r"><span class="sh-arrow">›</span></div></div>
+        <div class="slide-dots"></div><div class="slide-prog"></div>
+      </div>
+      <div class="reel-ov"><div class="reel-tag">Everyday Carry</div><div class="reel-name">Your New Essential</div></div>
+    </div>
+    <div class="reel-cta-card r">
+      <div style="font-size:2.2rem">💧</div>
+      <div style="font-family:var(--d);font-size:1.6rem;letter-spacing:.06em;line-height:1.1;color:var(--bl)">See All Content</div>
+      <a href="https://www.instagram.com/barh360/" target="_blank" rel="noopener" style="background:var(--orange);color:#fff;font-family:var(--d);font-size:.82rem;letter-spacing:.12em;padding:.48rem 1.2rem;border-radius:100px;font-weight:700;display:inline-block">@barh360</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES — FIXED LAYOUT: no empty box -->
+<section class="features" id="features">
+  <div class="feat-top">
+    <h2 class="rl">Built Different.<br><span style="color:var(--bl)">Built Better.</span></h2>
+    <p class="rr d2">Hydration without compromise. Every detail of BARH is engineered for the way you actually move.</p>
+  </div>
+  <!-- Row 1: 3 cards -->
+  <div class="feat-row1">
+    <div class="fc r d1"><div class="fc-num">01</div><h3 class="fc-title">Form-Fitting Ergonomics</h3><p class="fc-body">Contours to your body with precision weight distribution. You'll forget you're even wearing it.</p></div>
+    <div class="fc r d2"><div class="fc-num">02</div><h3 class="fc-title">Instant Access</h3><p class="fc-body">Water at your fingertips, always. No reaching. No stopping. Built for pace.</p></div>
+    <div class="fc r d3"><div class="fc-num">03</div><h3 class="fc-title">Stays Cold</h3><p class="fc-body">Thermal-retention construction keeps your water cold for hours. On trail or tarmac.</p></div>
+  </div>
+  <!-- Row 2: 2 cards, NO empty tall cell -->
+  <div class="feat-row2">
+    <div class="fc r d1"><div class="fc-num">04</div><h3 class="fc-title">Universal Wearability</h3><p class="fc-body">From marathon runners to wheelchair users — tested across every body and every activity. Inclusive by engineering, not afterthought.</p><div class="fc-badges"><div class="fc-badge">🏃 Runners</div><div class="fc-badge">⛰️ Hikers</div><div class="fc-badge">🎖️ Military</div><div class="fc-badge">♿ Wheelchair</div></div></div>
+    <div class="fc r d2"><div class="fc-num">05</div><h3 class="fc-title">Military-Grade Durability</h3><p class="fc-body">Stress-tested in SWAT, first responder, and tactical military environments. Built for when stakes are highest.</p><div class="fc-badge">✦ Tactical Ready</div></div>
+  </div>
+</section>
+
+<!-- WHO -->
+<section class="who" id="who">
+  <div class="who-inner">
+    <div class="who-text rl">
+      <h2>Raising The BARH<br><em>For Everyone.</em></h2>
+      <div class="who-cards">
+        <div class="who-card"><div class="who-icon">🏃</div><div class="who-ct"><h3>Runners</h3><p>No bounce, no straps, no bulk. Smooth hydration from mile one to the finish.</p></div></div>
+        <div class="who-card"><div class="who-icon">⛰️</div><div class="who-ct"><h3>Hikers</h3><p>Fits like a second skin. Water stays cold. Eyes stay on the view.</p></div></div>
+        <div class="who-card"><div class="who-icon">🎖️</div><div class="who-ct"><h3>Military &amp; First Responders</h3><p>Field-tested in tactical environments. Reliable when it matters most.</p></div></div>
+        <div class="who-card"><div class="who-icon">🌍</div><div class="who-ct"><h3>Everyday Athletes</h3><p>Festivals, commutes, workouts — BARH goes wherever life takes you.</p></div></div>
+      </div>
+    </div>
+    <div class="story-stack rr d2">
+      <div class="ss-deco ss-left"><img src="https://barh.co/wp-content/uploads/2025/07/rsw_984h_656-3.webp" alt="BARH trail"/></div>
+      <div class="ss-main">
+        <div class="slide-wrap" data-autoplay="3500">
+          <div class="slides">
+            <div class="slide"><img src="https://barh.co/wp-content/uploads/2025/07/IMG_8725.jpg" alt="BARH active"/></div>
+            <div class="slide"><img src="https://barh.co/wp-content/uploads/2025/07/IMG_8633.jpeg" alt="BARH lifestyle"/></div>
+            <div class="slide"><img src="https://barh.co/wp-content/uploads/2025/07/rsw_1280h_1280.webp" alt="BARH outdoor"/></div>
+            <div class="slide"><img src="https://barh.co/wp-content/uploads/2025/07/IMG_7222.jpg" alt="BARH community"/></div>
+          </div>
+          <div class="slide-hint"><div class="sh-l"><span class="sh-arrow">‹</span></div><div class="sh-r"><span class="sh-arrow">›</span></div></div>
+          <div class="slide-dots"></div><div class="slide-prog"></div>
+        </div>
+        <div class="ss2-lbl"><div class="stag">@barh360</div><div class="sname">Stay Hydrated.</div></div>
+      </div>
+      <div class="ss-deco ss-right"><img src="https://barh.co/wp-content/uploads/2025/07/IMG_7222.jpg" alt="BARH community"/></div>
+    </div>
+  </div>
+</section>
+
+<!-- WATER BREAK -->
+<div class="water-break">
+  <video id="wbVid" muted loop playsinline preload="none"
+    poster="https://barh.co/wp-content/uploads/2025/07/2037592809-80f3d6a8-d_1320.avif">
+    <source src="https://barh.co/wp-content/uploads/2025/07/EsDu5uC-1-2.mp4" type="video/mp4"/>
+  </video>
+  <div class="wb-ov"></div>
+  <div class="wb-content">
+    <div class="water-logo rs">BARH</div>
+    <div class="water-sub r d1">Cheers to Hydration</div>
+    <div class="r d2" style="margin-top:.6rem"><a href="https://barh.co/product/barh/" class="btn-primary">Order Your Pack</a></div>
+  </div>
+</div>
+
+<!-- SPACE SECTION -->
+<section class="space-sec" id="space">
+  <div class="space-inner">
+    <div class="space-text rl">
+      <div class="label">Space BARH</div>
+      <h2>Hydration<br>Beyond<br><em>Gravity.</em></h2>
+      <p>NASA &amp; SpaceX have accomplished many things — however, the need to address in-flight hydration issues in an anti-gravity environment has been pushed to the forefront. BARH's ergonomic technology is built to provide optimal hydration in the most critical situations like never before.</p>
+      <p>BARH's sleek half-gallon bladder now allows astronauts to maintain consistent hydration instantly, supporting a more productive, aware, and healthy mission.</p>
+      <ul class="space-bullets">
+        <li>Anti-gravity training facilities</li>
+        <li>Space exploration missions</li>
+        <li>Powder/supplement options for advanced health support</li>
+        <li>Supports astronaut health &amp; mission readiness</li>
+      </ul>
+      <div class="nasa-badges">
+        <div class="nasa-badge">🚀 NASA Compatible</div>
+        <div class="nasa-badge">🛸 SpaceX Ready</div>
+        <div class="nasa-badge">⚡ Zero-G Tested</div>
+      </div>
+      <div style="margin-top:1.8rem"><a href="https://barh.co/space/" class="btn-blue" target="_blank" rel="noopener">Learn More →</a></div>
+    </div>
+    <div class="space-imgs rr d2">
+      <div class="space-img-card tall">
+        <img src="https://barh.co/wp-content/uploads/2026/04/space-barh-1.png" alt="Space BARH pack" style="width:100%;height:auto"/>
+      </div>
+      <div class="space-img-card fixed-h">
+        <img src="https://barh.co/wp-content/uploads/2026/04/space-1.png" alt="Space application 1"/>
+      </div>
+      <div class="space-img-card fixed-h">
+        <img src="https://barh.co/wp-content/uploads/2026/04/space-2.png" alt="Space application 2"/>
+      </div>
+      <div class="space-img-card fixed-h" style="grid-column:span 2">
+        <img src="https://barh.co/wp-content/uploads/2026/04/space-3.png" alt="Space application 3"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MILITARY / GOVERNMENT SECTION -->
+<section class="gov-sec" id="military">
+  <div class="gov-header">
+    <div class="gov-text rl">
+      <div class="label">BARHs &amp; Stripes</div>
+      <h2>Combat-Ready<br><em>Hydration.</em></h2>
+      <p>An incomparable tactical advance in wearable hydration. Specifically designed with military and first responders in mind — keeping ample hydration at the forefront of life's most important tasks.</p>
+      <p>Cases of dehydration among military personnel are on the rise, becoming a serious operational concern. BARH's &amp; Stripes combats this risk by ensuring constant, effortless hydration in any mission environment.</p>
+      <div style="margin-top:1.8rem;display:flex;gap:.8rem;flex-wrap:wrap">
+        <a href="https://barh.co/barhs-and-stripes/" class="btn-primary" target="_blank" rel="noopener">BARHS &amp; Stripes →</a>
+        <a href="https://barh.co/product/barh/" class="btn-ghost">Order Now</a>
+      </div>
+    </div>
+    <div class="gov-advantages rr d2">
+      <div class="gov-adv"><div class="gov-adv-icon">⚡</div><div><h4>Ultra-Lightweight Tactical Design</h4><p>Reduces fatigue during extended missions while allowing full mobility in confined or rugged environments.</p></div></div>
+      <div class="gov-adv"><div class="gov-adv-icon">🛡️</div><div><h4>Combat-Grade Durability</h4><p>Engineered with high-strength, abrasion-resistant materials to survive harsh terrain and heavy wear.</p></div></div>
+      <div class="gov-adv"><div class="gov-adv-icon">🎯</div><div><h4>Rapid Deployment</h4><p>Intuitive setup and integration with existing loadouts for immediate readiness in critical situations.</p></div></div>
+      <div class="gov-adv"><div class="gov-adv-icon">🔇</div><div><h4>Stealth-Compatible Profile</h4><p>Minimal noise signature and low-reflective surfaces to maintain operational concealment.</p></div></div>
+    </div>
+  </div>
+  <!-- Gov image row -->
+  <div class="gov-img-row r">
+    <div class="gov-img-card"><img src="https://barh.co/wp-content/uploads/2026/04/12.png" alt="BARH military 12"/></div>
+    <div class="gov-img-card"><img src="https://barh.co/wp-content/uploads/2026/04/13.png" alt="BARH military 13"/></div>
+    <div class="gov-img-card"><img src="https://barh.co/wp-content/uploads/2026/04/14.png" alt="BARH military 14"/></div>
+  </div>
+  <!-- Stats -->
+  <div class="gov-stats r d2">
+    <div class="gov-stat"><div class="gov-stat-num">100%</div><div class="gov-stat-label">Hands-Free Operation</div></div>
+    <div class="gov-stat"><div class="gov-stat-num">2L</div><div class="gov-stat-label">Mission-Ready Capacity</div></div>
+    <div class="gov-stat"><div class="gov-stat-num">&lt;1lb</div><div class="gov-stat-label">Total Pack Weight</div></div>
+  </div>
+  <!-- Comparison -->
+  <div class="comparison-wrap r d3">
+    <img src="https://barh.co/wp-content/uploads/2026/03/BARH-Comparison-Sheet-1.png" alt="BARH military comparison sheet"/>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-sec" id="gallery">
+  <span class="sub r">Photo Gallery</span>
+  <h2 class="r d1">The BARH Pack.<br><span style="color:var(--orange)">In Action.</span></h2>
+  <div class="gallery-grid">
+    <div class="gal-cell tall r d1">
+      <div class="slide-wrap" data-autoplay="4000">
+        <div class="slides"><div class="slide"><img src="https://barh.co/wp-content/uploads/2026/01/1-1.png" alt="BARH 1"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2026/01/2-1.png" alt="BARH 2"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2026/01/3-1.png" alt="BARH 3"/></div></div>
+        <div class="slide-hint"><div class="sh-l"><span class="sh-arrow">‹</span></div><div class="sh-r"><span class="sh-arrow">›</span></div></div>
+        <div class="slide-dots"></div><div class="slide-prog"></div>
+      </div>
+      <div class="gal-cell-ov"><div class="gal-cell-label">The Pack</div></div>
+    </div>
+    <div class="gal-cell wide r d2">
+      <div class="slide-wrap" data-autoplay="4500">
+        <div class="slides"><div class="slide"><img src="https://barh.co/wp-content/uploads/2025/07/rsw_984h_656-3.webp" alt="Trail"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2025/07/rsw_1280h_1280.webp" alt="Outdoor"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2025/07/IMG_8725.jpg" alt="Active"/></div></div>
+        <div class="slide-hint"><div class="sh-l"><span class="sh-arrow">‹</span></div><div class="sh-r"><span class="sh-arrow">›</span></div></div>
+        <div class="slide-dots"></div><div class="slide-prog"></div>
+      </div>
+      <div class="gal-cell-ov"><div class="gal-cell-label">Lifestyle</div></div>
+    </div>
+    <div class="gal-cell r d3">
+      <div class="slide-wrap" data-autoplay="3800">
+        <div class="slides"><div class="slide"><img src="https://barh.co/wp-content/uploads/2026/01/4-1.png" alt="BARH 4"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2026/01/5-1.png" alt="BARH 5"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2026/01/6-1.png" alt="BARH 6"/></div></div>
+        <div class="slide-hint"><div class="sh-l"><span class="sh-arrow">‹</span></div><div class="sh-r"><span class="sh-arrow">›</span></div></div>
+        <div class="slide-dots"></div><div class="slide-prog"></div>
+      </div>
+      <div class="gal-cell-ov"><div class="gal-cell-label">Camo Edition</div></div>
+    </div>
+    <div class="gal-cell r d4">
+      <div class="slide-wrap" data-autoplay="5000">
+        <div class="slides"><div class="slide"><img src="https://barh.co/wp-content/uploads/2025/07/IMG_8633.jpeg" alt="Lifestyle"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2025/07/IMG_7222.jpg" alt="Community"/></div></div>
+        <div class="slide-hint"><div class="sh-l"><span class="sh-arrow">‹</span></div><div class="sh-r"><span class="sh-arrow">›</span></div></div>
+        <div class="slide-dots"></div><div class="slide-prog"></div>
+      </div>
+      <div class="gal-cell-ov"><div class="gal-cell-label">Community</div></div>
+    </div>
+    <div class="gal-cell r d2">
+      <div class="slide-wrap" data-autoplay="4200">
+        <div class="slides"><div class="slide"><img src="https://barh.co/wp-content/uploads/2026/01/7-1.png" alt="BARH 7"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2026/01/8-1.png" alt="BARH 8"/></div></div>
+        <div class="slide-hint"><div class="sh-l"><span class="sh-arrow">‹</span></div><div class="sh-r"><span class="sh-arrow">›</span></div></div>
+        <div class="slide-dots"></div><div class="slide-prog"></div>
+      </div>
+      <div class="gal-cell-ov"><div class="gal-cell-label">Detail</div></div>
+    </div>
+    <div class="gal-cell r d3">
+      <div class="slide-wrap" data-autoplay="3600">
+        <div class="slides"><div class="slide"><img src="https://barh.co/wp-content/uploads/2026/01/9-1.png" alt="BARH 9"/></div><div class="slide"><img src="https://barh.co/wp-content/uploads/2026/01/10-1.png" alt="BARH 10"/></div></div>
+        <div class="slide-hint"><div class="sh-l"><span class="sh-arrow">‹</span></div><div class="sh-r"><span class="sh-arrow">›</span></div></div>
+        <div class="slide-dots"></div><div class="slide-prog"></div>
+      </div>
+      <div class="gal-cell-ov"><div class="gal-cell-label">Colors</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BARH 360 -->
+<section class="b360-sec" id="b360">
+  <div class="b360-inner">
+    <div class="b360-text rl">
+      <div class="label">BARH 360°</div>
+      <h2>Defeating<br>Global<br><em>Dehydration.</em></h2>
+      <p>BARH 360° is our aggressive initiative to defeat global dehydration in every lifestyle. Seamlessly wearable hydration solutions for every walk of life — enabling mobility and safety wherever it's needed most.</p>
+      <p>BARH is actively deployed in regions struck by natural disasters and underserved communities, delivering clean water to individuals forced to walk miles for basic hydration.</p>
+      <h3 class="b360-sub-heading">Natural Disasters</h3>
+      <p>BARH partners with key organizations worldwide to deliver clean, wearable hydration in the aftermath of disasters — keeping people mobile and supported when it matters most.</p>
+      <h3 class="b360-sub-heading">Plastic-Free Environments</h3>
+      <p>Plastics in our oceans threaten marine life and the planet's health. BARH helps combat this by reducing the need for disposable bottles, offering an environmentally safe hydration solution.</p>
+      <div style="margin-top:1.8rem"><a href="https://barh.co/barh360/" class="btn-blue" target="_blank" rel="noopener">BARH 360° →</a></div>
+    </div>
+    <div class="b360-imgs rr d2">
+      <div class="b360-img"><img src="https://barh.co/wp-content/uploads/2025/08/IMG_9773.jpg" alt="BARH 360 1"/></div>
+      <div class="b360-img"><img src="https://barh.co/wp-content/uploads/2025/08/IMG_9750.jpg" alt="BARH 360 2"/></div>
+      <div class="b360-img"><img src="https://barh.co/wp-content/uploads/2025/08/IMG_9749.jpg" alt="BARH 360 3"/></div>
+      <div class="b360-img"><img src="https://barh.co/wp-content/uploads/2025/08/IMG_9752.jpg" alt="BARH disaster response"/></div>
+      <div class="b360-img"><img src="https://barh.co/wp-content/uploads/2025/08/IMG_9763-e1755792561203.jpeg" alt="BARH eco"/></div>
+      <div class="b360-img"><img src="https://barh.co/wp-content/uploads/2025/08/IMG_9758-e1755792682700.jpeg" alt="BARH ocean"/></div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO TESTIMONIALS — autoplay, muted, loop (no click needed) -->
+<section class="vid-sec" id="testimonials">
+  <span class="sub r">See The Difference</span>
+  <h2 class="r d1">BARH In<br><span style="color:var(--orange)">Action.</span></h2>
+  <p class="r d2" style="font-size:.9rem;line-height:1.75;color:rgba(240,246,255,.55);font-weight:300;max-width:600px;margin-top:.5rem">Nothing tells the story better than the people who use it. Watch how BARH is transforming hydration in real-world conditions.</p>
+  <div class="vid-grid">
+    <!-- Government / Military Testimonial video from barh.co -->
+    <div class="vid-card r d1">
+      <video autoplay muted loop playsinline preload="auto"
+        style="width:100%;display:block;border-radius:12px 12px 0 0;max-height:380px;object-fit:cover">
+        <source src="https://barh.co/wp-content/uploads/2025/07/MOV_15671.webm" type="video/webm"/>
+      </video>
+      <div class="vid-card-label">Government &amp; Military Testimonial</div>
+    </div>
+    <!-- BARH in action field demo -->
+    <div class="vid-card r d2">
+      <video autoplay muted loop playsinline preload="auto"
+        style="width:100%;display:block;border-radius:12px 12px 0 0;max-height:380px;object-fit:cover">
+        <source src="https://barh.co/wp-content/uploads/2026/04/IMG_4561-1.mp4#t=191,210" type="video/mp4"/>
+        <source src="https://barh.co/wp-content/uploads/2025/07/EsDu5uC-1-2.mp4" type="video/mp4"/>
+      </video>
+      <div class="vid-card-label">Space &amp; Anti-Gravity Testing</div>
+    </div>
+    <!-- Zero-G water video full width -->
+    <div class="vid-card vid-full r d3">
+      <video autoplay muted loop playsinline preload="auto"
+        style="width:100%;display:block;border-radius:12px 12px 0 0;max-height:420px;object-fit:cover">
+        <source src="https://barh.co/wp-content/uploads/2026/04/Zero-G-water.mp4" type="video/mp4"/>
+        <source src="https://barh.co/wp-content/uploads/2026/03/BARHs-and-Stripes-bkg-video.mp4" type="video/mp4"/>
+      </video>
+      <div class="vid-card-label">Zero-G Hydration — The Future of Space Hydration</div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:2rem" class="r d4">
+    <a href="https://www.youtube.com/@barh360" target="_blank" rel="noopener" class="btn-blue">Watch More on YouTube →</a>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="rev-hd">
+    <p class="lbl r">Real People. Real Results.</p>
+    <h2 class="r d1">They Drank<br>It In.</h2>
+    <span class="s-big r d2">★★★★★</span>
+  </div>
+  <div class="rev-grid">
+    <div class="rev-card r d1"><div class="rev-stars">★★★★★</div><span class="rev-qm">"</span><p class="rev-txt">I wore it on a 10-mile hike and didn't adjust it once. It felt like part of my body — and the water stayed cold for hours. Unreal!</p><div class="rev-auth">Jessica Carter</div></div>
+    <div class="rev-card r d2"><div class="rev-stars">★★★★★</div><span class="rev-qm">"</span><p class="rev-txt">No straps, no bouncing, no bulk. Just smooth, steady hydration the whole way through. I'll never run with a bottle again!</p><div class="rev-auth">Austin Moore</div></div>
+    <div class="rev-card r d3"><div class="rev-stars">★★★★★</div><span class="rev-qm">"</span><p class="rev-txt">The more I drank the lighter it got! I literally forgot that I was even wearing it! PURE GENIUS!</p><div class="rev-auth">Simon Lee</div></div>
+    <div class="rev-card r d4"><div class="rev-stars">★★★★★</div><span class="rev-qm">"</span><p class="rev-txt">No More Bulky Backpack! No More Extra Weight! Thank You BARH!</p><div class="rev-auth">Ms. Marathon</div></div>
+  </div>
+</section>
+
+<!-- ORANGE MARQUEE -->
+<div class="om" aria-hidden="true">
+  <div class="om-track">
+    <div class="om-item">NO MORE BULKY BACKPACK</div><div class="om-item">NO MORE EXTRA WEIGHT</div><div class="om-item">NO MORE HAND-TO-HAND BOTTLES</div><div class="om-item">THANK YOU BARH</div>
+    <div class="om-item">NO MORE BULKY BACKPACK</div><div class="om-item">NO MORE EXTRA WEIGHT</div><div class="om-item">NO MORE HAND-TO-HAND BOTTLES</div><div class="om-item">THANK YOU BARH</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="rl">
+    <div class="abt-lbl">The Origin Story</div>
+    <h2>The Straw<br>That Broke<br><em>The Camel's Back.</em></h2>
+    <p>In this ever-changing, fast-paced world, the need for ample hydration without hand-to-hand water bottles is essential to life. BARH was born from that need.</p>
+    <p>The attention to sleekness, weight distribution, and capacity that BARH brings is unmatched. Whether marathon runners or wheelchair-bound users, BARH is tested and proven to be the new standard.</p>
+    <div class="abt-ctas">
+      <a href="https://barh.co/product/barh/" class="btn-primary">Get Your Pack</a>
+      <a href="https://barh.co/wp-content/uploads/2026/02/BARH-Deck-2025-2.pdf" class="btn-ghost" target="_blank" rel="noopener">View Deck →</a>
+    </div>
+  </div>
+  <div class="rr d2">
+    <div class="spec-table">
+      <div class="spec-row"><span class="sk">Capacity</span><span class="sv"><span class="hi">2</span> Liters</span></div>
+      <div class="spec-row"><span class="sk">Weight</span><span class="sv">Under <span class="hi">1</span> lb</span></div>
+      <div class="spec-row"><span class="sk">System</span><span class="sv">Patented / Ergonomic</span></div>
+      <div class="spec-row"><span class="sk">Coverage</span><span class="sv"><span class="hi">360°</span> Fit</span></div>
+      <div class="spec-row"><span class="sk">Refillable</span><span class="sv">Yes</span></div>
+      <div class="spec-row"><span class="sk">Use Cases</span><span class="sv">Leisure → <span class="hi">Tactical</span></span></div>
+      <div class="spec-row"><span class="sk">Users</span><span class="sv">Every Body</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- BIG CTA -->
+<div class="big-cta">
+  <div class="bc-inner rs">
+    <h2>Hydration,<br>Simplified.</h2>
+    <p>Your pack is waiting. Refillable. Lightweight. Revolutionary.</p>
+    <a href="https://barh.co/product/barh/" class="btn-dark">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      Order Your BARH Now
+    </a>
+  </div>
+</div>
+
+<!-- SOCIAL -->
+<div class="social-sec">
+  <p>Follow The Movement</p>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/barh360/" class="si" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+    <a href="https://x.com/barh360x" class="si" target="_blank" rel="noopener" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+    <a href="https://www.youtube.com/@barh360" class="si" target="_blank" rel="noopener" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg></a>
+    <a href="https://www.tiktok.com/@barh360" class="si" target="_blank" rel="noopener" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.16 8.16 0 0 0 4.77 1.52V6.76a4.85 4.85 0 0 1-1-.07z"/></svg></a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span class="fl">BARH</span>
+  <div class="flinks">
+    <a href="https://barh.co/terms/">Terms</a>
+    <a href="https://barh.co/privacy-policy/">Privacy</a>
+    <a href="https://barh.co/shipping-refund-policy/">Shipping &amp; Returns</a>
+    <a href="https://barh.co/contact/">Contact</a>
+  </div>
+  <span class="fcopy">© 2026 BARH. All Rights Reserved.</span>
+</footer>
+
+<script>
+/* ══════════════════════════════
+   SLIDESHOW ENGINE
+   Single approach: translateX on .slides track.
+   Works for all contexts — cells always have a
+   defined height so track doesn't collapse.
+══════════════════════════════ */
+function initSlide(wrap){
+  const track=wrap.querySelector('.slides');
+  const slidesEl=Array.from(wrap.querySelectorAll('.slide'));
+  const dotsEl=wrap.querySelector('.slide-dots');
+  const progEl=wrap.querySelector('.slide-prog');
+  const hintL=wrap.querySelector('.sh-l');
+  const hintR=wrap.querySelector('.sh-r');
+  const interval=parseInt(wrap.dataset.autoplay)||4000;
+  const total=slidesEl.length;
+  if(total<2)return;
+  let cur=0,timer=null,pTimer=null;
+
+  // Build dots
+  for(let i=0;i<total;i++){
+    const d=document.createElement('span');
+    d.className='slide-dot'+(i===0?' on':'');
+    dotsEl.appendChild(d);
+  }
+  const dots=dotsEl.querySelectorAll('.slide-dot');
+
+  function goTo(n){
+    cur=(n+total)%total;
+    track.style.transform=`translateX(-${cur*100}%)`;
+    dots.forEach((d,i)=>d.classList.toggle('on',i===cur));
+    resetProg();
+  }
+  function resetProg(){
+    clearTimeout(pTimer);
+    progEl.style.transition='none';
+    progEl.style.width='0%';
+    pTimer=setTimeout(()=>{
+      progEl.style.transition=`width ${interval}ms linear`;
+      progEl.style.width='100%';
+    },20);
+  }
+  function startAuto(){stopAuto();timer=setInterval(()=>goTo(cur+1),interval);resetProg();}
+  function stopAuto(){clearInterval(timer);clearTimeout(pTimer);}
+
+  // Pointer / touch interaction
+  let pDown=false,pMoved=false,pStartX=0;
+  wrap.addEventListener('pointerdown',e=>{pDown=true;pMoved=false;pStartX=e.clientX;stopAuto();},{passive:true});
+  wrap.addEventListener('pointermove',e=>{if(pDown&&Math.abs(e.clientX-pStartX)>7)pMoved=true;},{passive:true});
+  wrap.addEventListener('pointerup',e=>{
+    if(!pDown)return;pDown=false;
+    const rect=wrap.getBoundingClientRect();
+    const x=e.clientX-rect.left;
+    if(!pMoved){
+      // tap/click = open lightbox
+      const img=slidesEl[cur].querySelector('img');
+      if(img)openLB(img.src);
+    } else {
+      if(x<rect.width/2)goTo(cur-1);else goTo(cur+1);
+    }
+    startAuto();
+  });
+  if(hintL)hintL.addEventListener('click',e=>{e.stopPropagation();goTo(cur-1);startAuto();});
+  if(hintR)hintR.addEventListener('click',e=>{e.stopPropagation();goTo(cur+1);startAuto();});
+
+  // Pause when scrolled out of view to save CPU
+  new IntersectionObserver(entries=>{
+    if(entries[0].isIntersecting)startAuto();else stopAuto();
+  },{threshold:0.1}).observe(wrap);
+}
+document.querySelectorAll('.slide-wrap').forEach(initSlide);
+
+/* ══════════════════════════════
+   LIGHTBOX
+══════════════════════════════ */
+const lb=document.getElementById('lb');
+const lbImg=document.getElementById('lb-img');
+const lbCounter=document.getElementById('lb-counter');
+const allSrcs=[...new Set([...document.querySelectorAll('.slide img')].map(i=>i.src))];
+let lbIdx=0;
+
+function openLB(src){
+  lbIdx=allSrcs.indexOf(src);if(lbIdx<0)lbIdx=0;
+  lbImg.src=allSrcs[lbIdx];
+  lbCounter.textContent=`${lbIdx+1} / ${allSrcs.length}`;
+  lb.classList.add('open');document.body.style.overflow='hidden';
+}
+function closeLB(){lb.classList.remove('open');document.body.style.overflow='';lbImg.src='';}
+function lbNav(dir){lbIdx=(lbIdx+dir+allSrcs.length)%allSrcs.length;lbImg.src=allSrcs[lbIdx];lbCounter.textContent=`${lbIdx+1} / ${allSrcs.length}`;}
+
+document.getElementById('lb-close').addEventListener('click',closeLB);
+document.getElementById('lb-prev').addEventListener('click',()=>lbNav(-1));
+document.getElementById('lb-next').addEventListener('click',()=>lbNav(1));
+lb.addEventListener('click',e=>{if(e.target===lb)closeLB();});
+document.addEventListener('keydown',e=>{
+  if(!lb.classList.contains('open'))return;
+  if(e.key==='Escape')closeLB();
+  if(e.key==='ArrowLeft')lbNav(-1);
+  if(e.key==='ArrowRight')lbNav(1);
+});
+
+/* ══════════════════════════════
+   CURSOR
+══════════════════════════════ */
+const cur=document.getElementById('cur'),cur2=document.getElementById('cur2');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;},{passive:true});
+(function loop(){
+  cur.style.transform=`translate3d(${mx-5}px,${my-5}px,0)`;
+  rx+=(mx-rx)*.14;ry+=(my-ry)*.14;
+  cur2.style.transform=`translate3d(${rx-18}px,${ry-18}px,0)`;
+  requestAnimationFrame(loop);
+})();
+document.querySelectorAll('a,button,.reel-card,.who-card,.fc,.rev-card,.gal-cell,.slide-wrap,.gov-adv').forEach(el=>{
+  el.addEventListener('mouseenter',()=>document.body.classList.add('hov'),{passive:true});
+  el.addEventListener('mouseleave',()=>document.body.classList.remove('hov'),{passive:true});
+});
+
+/* ══════════════════════════════
+   NAV
+══════════════════════════════ */
+const nav=document.getElementById('nav');
+const navToggle=document.getElementById('navToggle');
+const navLinks=document.getElementById('navLinks');
+navToggle.addEventListener('click',()=>{
+  navToggle.classList.toggle('open');
+  navLinks.classList.toggle('open');
+  document.body.style.overflow=navLinks.classList.contains('open')?'hidden':'';
+});
+// Close on link click
+navLinks.querySelectorAll('.nl').forEach(a=>a.addEventListener('click',()=>{
+  navToggle.classList.remove('open');navLinks.classList.remove('open');document.body.style.overflow='';
+}));
+
+/* ══════════════════════════════
+   SCROLL (throttled)
+══════════════════════════════ */
+const prog=document.getElementById('prog');
+const vig=document.querySelector('.hero-vig');
+let ticking=false;
+window.addEventListener('scroll',()=>{
+  if(!ticking){requestAnimationFrame(()=>{
+    const sy=window.scrollY;
+    prog.style.width=Math.min(sy/(document.body.scrollHeight-innerHeight)*100,100)+'%';
+    nav.classList.toggle('scrolled',sy>60);
+    if(vig&&sy<innerHeight*1.5)vig.style.transform=`translateY(${sy*.08}px)`;
+    ticking=false;
+  });ticking=true;}
+},{passive:true});
+
+/* ══════════════════════════════
+   REVEAL
+══════════════════════════════ */
+const revObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');revObs.unobserve(e.target);}});
+},{threshold:0.08,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.r,.rl,.rr,.rs').forEach(el=>revObs.observe(el));
+
+/* ══════════════════════════════
+   LAZY WATER VIDEO
+══════════════════════════════ */
+const wbVid=document.getElementById('wbVid');
+if(wbVid){
+  new IntersectionObserver((en,o)=>{
+    if(en[0].isIntersecting){wbVid.play();o.disconnect();}
+  },{threshold:0.2}).observe(wbVid.closest('.water-break'));
+}
+
+/* Lazy-load all testimonial videos */
+document.querySelectorAll('.vid-card video').forEach(v=>{
+  new IntersectionObserver((en,o)=>{
+    if(en[0].isIntersecting){
+      v.load();
+      v.play().catch(()=>{});
+      o.disconnect();
+    }
+  },{threshold:0.15}).observe(v);
+});
+
+/* ══════════════════════════════
+   REEL STRIP DRAG
+══════════════════════════════ */
+const strip=document.getElementById('reelStrip');
+let dn=false,sX=0,sL=0;
+strip.addEventListener('mousedown',e=>{dn=true;sX=e.pageX-strip.offsetLeft;sL=strip.scrollLeft;});
+window.addEventListener('mouseup',()=>dn=false);
+strip.addEventListener('mousemove',e=>{if(!dn)return;e.preventDefault();strip.scrollLeft=sL-(e.pageX-strip.offsetLeft-sX)*1.5;});
+</script>
+</body>
+</html>
