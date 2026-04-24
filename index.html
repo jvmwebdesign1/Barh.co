@@ -218,69 +218,11 @@ nav.scrolled{background:rgba(3,8,15,.97);border-color:rgba(0,153,230,.15)}
 .gal-cell-label{font-family:var(--d);font-size:.95rem;letter-spacing:.06em;color:var(--w);opacity:0;transform:translateY(8px);transition:opacity .3s,transform .3s}
 .gal-cell:hover .gal-cell-label{opacity:1;transform:translateY(0)}
 
-/* ── SPACE SECTION ── */
-.space-sec{background:var(--k);padding:7rem 2.8rem;position:relative;overflow:hidden}
-.space-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 70% 50%,rgba(0,80,180,.08) 0%,transparent 70%);pointer-events:none}
-.space-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
-.space-text .label{font-size:.68rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--bl);display:flex;align-items:center;gap:.6rem;margin-bottom:.9rem}
-.space-text .label::before{content:'';width:26px;height:1px;background:var(--bl)}
-.space-text h2{font-family:var(--d);font-size:clamp(2.5rem,5.5vw,5rem);letter-spacing:.03em;line-height:.95;margin-bottom:1.5rem}
-.space-text h2 em{color:var(--bl);font-style:normal;display:block}
-.space-text p{font-size:.9rem;line-height:1.8;color:rgba(240,246,255,.58);font-weight:300;margin-bottom:1rem}
-.space-bullets{list-style:none;display:flex;flex-direction:column;gap:.6rem;margin:1.2rem 0}
-.space-bullets li{font-size:.88rem;font-weight:600;color:rgba(240,246,255,.75);display:flex;align-items:center;gap:.7rem}
-.space-bullets li::before{content:'✦';color:var(--orange);font-size:.6rem;flex-shrink:0}
-.space-imgs{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
-.space-img-card{border-radius:10px;overflow:hidden;background:var(--mid2)}
-.space-img-card.tall{grid-column:span 2}
-.space-img-card img{width:100%;height:auto;display:block}
-.space-img-card.fixed-h{height:220px}
-.space-img-card.fixed-h img{width:100%;height:100%;object-fit:contain;background:var(--mid2)}
-.nasa-badges{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.5rem}
-.nasa-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(0,153,230,.1);border:1px solid rgba(0,153,230,.2);padding:.45rem 1rem;border-radius:100px;font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--bl)}
 
-/* ── GOV / MILITARY SECTION ── */
-.gov-sec{background:var(--mid2);padding:7rem 2.8rem;position:relative;overflow:hidden}
-.gov-sec::before{content:'';position:absolute;top:-200px;left:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(255,107,0,.04) 0%,transparent 65%);pointer-events:none}
-.gov-header{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;margin-bottom:4rem}
-.gov-text .label{font-size:.68rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--orange);display:flex;align-items:center;gap:.6rem;margin-bottom:.9rem}
-.gov-text .label::before{content:'';width:26px;height:1px;background:var(--orange)}
-.gov-text h2{font-family:var(--d);font-size:clamp(2.5rem,5.5vw,5rem);letter-spacing:.03em;line-height:.95;margin-bottom:1.5rem}
-.gov-text h2 em{color:var(--orange);font-style:normal;display:block}
-.gov-text p{font-size:.9rem;line-height:1.8;color:rgba(240,246,255,.58);font-weight:300;margin-bottom:1rem}
-.gov-advantages{display:flex;flex-direction:column;gap:.8rem}
-.gov-adv{display:flex;align-items:flex-start;gap:.8rem;padding:1rem 1.2rem;background:var(--glass);border:1px solid rgba(255,107,0,.08);border-radius:10px;transition:border-color .3s,background .3s}
-.gov-adv:hover{border-color:rgba(255,107,0,.2);background:rgba(255,107,0,.04)}
-.gov-adv-icon{font-size:1.2rem;flex-shrink:0;margin-top:.1rem}
-.gov-adv h4{font-family:var(--d);font-size:1rem;letter-spacing:.06em;margin-bottom:.2rem;color:var(--w)}
-.gov-adv p{font-size:.78rem;line-height:1.55;color:rgba(240,246,255,.48);font-weight:300;margin:0}
-/* Gallery row */
-.gov-img-row{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin-bottom:3rem}
-.gov-img-card{border-radius:10px;overflow:hidden;background:var(--mid);height:220px}
-.gov-img-card img{width:100%;height:100%;object-fit:cover}
-/* Stats */
-.gov-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,107,0,.1);border:1px solid rgba(255,107,0,.1);border-radius:10px;overflow:hidden}
-.gov-stat{background:var(--mid2);padding:2rem 1.5rem;text-align:center;transition:background .3s}
-.gov-stat:hover{background:#120e05}
-.gov-stat-num{font-family:var(--d);font-size:3rem;color:var(--orange);line-height:1;margin-bottom:.4rem}
-.gov-stat-label{font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(240,246,255,.45)}
+
 /* Comparison image */
 .comparison-wrap{margin-top:3rem;border-radius:10px;overflow:hidden}
 .comparison-wrap img{width:100%;height:auto;display:block}
-
-/* ── BARH 360 SECTION ── */
-.b360-sec{background:var(--k);padding:7rem 2.8rem;position:relative;overflow:hidden}
-.b360-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
-.b360-text .label{font-size:.68rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--bl);display:flex;align-items:center;gap:.6rem;margin-bottom:.9rem}
-.b360-text .label::before{content:'';width:26px;height:1px;background:var(--bl)}
-.b360-text h2{font-family:var(--d);font-size:clamp(2.5rem,5.5vw,5rem);letter-spacing:.03em;line-height:.95;margin-bottom:1.5rem}
-.b360-text h2 em{color:var(--bl);font-style:normal;display:block}
-.b360-text p{font-size:.9rem;line-height:1.8;color:rgba(240,246,255,.58);font-weight:300;margin-bottom:1rem}
-.b360-sub-heading{font-family:var(--d);font-size:1.4rem;letter-spacing:.06em;color:var(--w);margin:1.5rem 0 .7rem}
-.b360-imgs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.6rem}
-.b360-img{border-radius:8px;overflow:hidden;height:160px;background:var(--mid2)}
-.b360-img img{width:100%;height:100%;object-fit:cover}
-.b360-img.tall{height:220px}
 
 /* ── VIDEO EMBEDS (autoplay testimonial) ── */
 .vid-sec{background:var(--mid2);padding:5rem 2.8rem}
@@ -795,83 +737,7 @@ footer{background:var(--mid2);padding:2.2rem 2.8rem;display:flex;align-items:cen
   </div>
 </section>
 
-<!-- BARH 360 -->
-<section class="b360-sec" id="b360">
-  <div class="b360-inner">
-    <div class="b360-text rl">
-      <div class="label">BARH 360°</div>
-      <h2>Defeating<br>Global<br><em>Dehydration.</em></h2>
-      <p>BARH 360° is our aggressive initiative to defeat global dehydration in every lifestyle. Seamlessly wearable hydration solutions for every walk of life — enabling mobility and safety wherever it's needed most.</p>
-      <p>BARH is actively deployed in regions struck by natural disasters and underserved communities, delivering clean water to individuals forced to walk miles for basic hydration.</p>
-      <h3 class="b360-sub-heading">Natural Disasters</h3>
-      <p>BARH partners with key organizations worldwide to deliver clean, wearable hydration in the aftermath of disasters — keeping people mobile and supported when it matters most.</p>
-      <h3 class="b360-sub-heading">Plastic-Free Environments</h3>
-      <p>Plastics in our oceans threaten marine life and the planet's health. BARH helps combat this by reducing the need for disposable bottles, offering an environmentally safe hydration solution.</p>
-      <div style="margin-top:1.8rem"><a href="https://barh.co/barh360/" class="btn-blue" target="_blank" rel="noopener">BARH 360° →</a></div>
-    </div>
-    <div class="b360-imgs rr d2">
-      <div class="b360-img"><img src="https://barh.co/wp-content/uploads/2025/08/IMG_9773.jpg" alt="BARH 360 1"/></div>
-      <div class="b360-img"><img src="https://barh.co/wp-content/uploads/2025/08/IMG_9750.jpg" alt="BARH 360 2"/></div>
-      <div class="b360-img"><img src="https://barh.co/wp-content/uploads/2025/08/IMG_9749.jpg" alt="BARH 360 3"/></div>
-      <div class="b360-img"><img src="https://barh.co/wp-content/uploads/2025/08/IMG_9752.jpg" alt="BARH disaster response"/></div>
-      <div class="b360-img"><img src="https://barh.co/wp-content/uploads/2025/08/IMG_9763-e1755792561203.jpeg" alt="BARH eco"/></div>
-      <div class="b360-img"><img src="https://barh.co/wp-content/uploads/2025/08/IMG_9758-e1755792682700.jpeg" alt="BARH ocean"/></div>
-    </div>
-  </div>
-</section>
 
-<!-- VIDEO TESTIMONIALS — autoplay, muted, loop (no click needed) -->
-<section class="vid-sec" id="testimonials">
-  <span class="sub r">See The Difference</span>
-  <h2 class="r d1">BARH In<br><span style="color:var(--orange)">Action.</span></h2>
-  <p class="r d2" style="font-size:.9rem;line-height:1.75;color:rgba(240,246,255,.55);font-weight:300;max-width:600px;margin-top:.5rem">Nothing tells the story better than the people who use it. Watch how BARH is transforming hydration in real-world conditions.</p>
-  <div class="vid-grid">
-    <!-- Government / Military Testimonial video from barh.co -->
-    <div class="vid-card r d1">
-      <video autoplay muted loop playsinline preload="auto"
-        style="width:100%;display:block;border-radius:12px 12px 0 0;max-height:380px;object-fit:cover">
-        <source src="https://barh.co/wp-content/uploads/2025/07/MOV_15671.webm" type="video/webm"/>
-      </video>
-      <div class="vid-card-label">Government &amp; Military Testimonial</div>
-    </div>
-    <!-- BARH in action field demo -->
-    <div class="vid-card r d2">
-      <video autoplay muted loop playsinline preload="auto"
-        style="width:100%;display:block;border-radius:12px 12px 0 0;max-height:380px;object-fit:cover">
-        <source src="https://barh.co/wp-content/uploads/2026/04/IMG_4561-1.mp4#t=191,210" type="video/mp4"/>
-        <source src="https://barh.co/wp-content/uploads/2025/07/EsDu5uC-1-2.mp4" type="video/mp4"/>
-      </video>
-      <div class="vid-card-label">Space &amp; Anti-Gravity Testing</div>
-    </div>
-    <!-- Zero-G water video full width -->
-    <div class="vid-card vid-full r d3">
-      <video autoplay muted loop playsinline preload="auto"
-        style="width:100%;display:block;border-radius:12px 12px 0 0;max-height:420px;object-fit:cover">
-        <source src="https://barh.co/wp-content/uploads/2026/04/Zero-G-water.mp4" type="video/mp4"/>
-        <source src="https://barh.co/wp-content/uploads/2026/03/BARHs-and-Stripes-bkg-video.mp4" type="video/mp4"/>
-      </video>
-      <div class="vid-card-label">Zero-G Hydration — The Future of Space Hydration</div>
-    </div>
-  </div>
-  <div style="text-align:center;margin-top:2rem" class="r d4">
-    <a href="https://www.youtube.com/@barh360" target="_blank" rel="noopener" class="btn-blue">Watch More on YouTube →</a>
-  </div>
-</section>
-
-<!-- REVIEWS -->
-<section class="reviews" id="reviews">
-  <div class="rev-hd">
-    <p class="lbl r">Real People. Real Results.</p>
-    <h2 class="r d1">They Drank<br>It In.</h2>
-    <span class="s-big r d2">★★★★★</span>
-  </div>
-  <div class="rev-grid">
-    <div class="rev-card r d1"><div class="rev-stars">★★★★★</div><span class="rev-qm">"</span><p class="rev-txt">I wore it on a 10-mile hike and didn't adjust it once. It felt like part of my body — and the water stayed cold for hours. Unreal!</p><div class="rev-auth">Jessica Carter</div></div>
-    <div class="rev-card r d2"><div class="rev-stars">★★★★★</div><span class="rev-qm">"</span><p class="rev-txt">No straps, no bouncing, no bulk. Just smooth, steady hydration the whole way through. I'll never run with a bottle again!</p><div class="rev-auth">Austin Moore</div></div>
-    <div class="rev-card r d3"><div class="rev-stars">★★★★★</div><span class="rev-qm">"</span><p class="rev-txt">The more I drank the lighter it got! I literally forgot that I was even wearing it! PURE GENIUS!</p><div class="rev-auth">Simon Lee</div></div>
-    <div class="rev-card r d4"><div class="rev-stars">★★★★★</div><span class="rev-qm">"</span><p class="rev-txt">No More Bulky Backpack! No More Extra Weight! Thank You BARH!</p><div class="rev-auth">Ms. Marathon</div></div>
-  </div>
-</section>
 
 <!-- ORANGE MARQUEE -->
 <div class="om" aria-hidden="true">
@@ -881,30 +747,6 @@ footer{background:var(--mid2);padding:2.2rem 2.8rem;display:flex;align-items:cen
   </div>
 </div>
 
-<!-- ABOUT -->
-<section class="about" id="about">
-  <div class="rl">
-    <div class="abt-lbl">The Origin Story</div>
-    <h2>The Straw<br>That Broke<br><em>The Camel's Back.</em></h2>
-    <p>In this ever-changing, fast-paced world, the need for ample hydration without hand-to-hand water bottles is essential to life. BARH was born from that need.</p>
-    <p>The attention to sleekness, weight distribution, and capacity that BARH brings is unmatched. Whether marathon runners or wheelchair-bound users, BARH is tested and proven to be the new standard.</p>
-    <div class="abt-ctas">
-      <a href="https://barh.co/product/barh/" class="btn-primary">Get Your Pack</a>
-      <a href="https://barh.co/wp-content/uploads/2026/02/BARH-Deck-2025-2.pdf" class="btn-ghost" target="_blank" rel="noopener">View Deck →</a>
-    </div>
-  </div>
-  <div class="rr d2">
-    <div class="spec-table">
-      <div class="spec-row"><span class="sk">Capacity</span><span class="sv"><span class="hi">2</span> Liters</span></div>
-      <div class="spec-row"><span class="sk">Weight</span><span class="sv">Under <span class="hi">1</span> lb</span></div>
-      <div class="spec-row"><span class="sk">System</span><span class="sv">Patented / Ergonomic</span></div>
-      <div class="spec-row"><span class="sk">Coverage</span><span class="sv"><span class="hi">360°</span> Fit</span></div>
-      <div class="spec-row"><span class="sk">Refillable</span><span class="sv">Yes</span></div>
-      <div class="spec-row"><span class="sk">Use Cases</span><span class="sv">Leisure → <span class="hi">Tactical</span></span></div>
-      <div class="spec-row"><span class="sk">Users</span><span class="sv">Every Body</span></div>
-    </div>
-  </div>
-</section>
 
 <!-- BIG CTA -->
 <div class="big-cta">
